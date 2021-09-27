@@ -17,11 +17,17 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
     - et_xmlfile
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - openpyxl
     - openpyxl.cell
