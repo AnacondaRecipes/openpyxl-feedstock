@@ -54,8 +54,7 @@ about:
     openpyxl is a Python library to read/write Excel 2010
     xlsx/xlsm/xltx/xltm files.
   doc_url: https://openpyxl.readthedocs.io/
-  dev_url: https://bitbucket.org/openpyxl/openpyxl/
-  doc_source_url: https://bitbucket.org/openpyxl/openpyxl/src/default/doc/index.rst
+  dev_url: https://foss.heptapod.net/openpyxl/openpyxl
 
 extra:
   recipe-maintainers:
