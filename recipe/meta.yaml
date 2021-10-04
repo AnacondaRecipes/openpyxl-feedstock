@@ -1,4 +1,4 @@
-{% set version = "3.0.7" %}
+{% set version = "3.0.9" %}
 
 package:
   name: openpyxl
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/openpyxl/openpyxl-{{ version }}.tar.gz
-  sha256: 6456a3b472e1ef0facb1129f3c6ef00713cebf62e736cd7a75bcc3247432f251
+  sha256: 40f568b9829bf9e446acfffce30250ac1fa39035124d55fc024025c41481c90f
 
 build:
   number: 0
@@ -15,14 +15,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
+    - setuptools
+    - wheel
   run:
-    - python >=3.6
-    - jdcal
+    - python
     - et_xmlfile
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - openpyxl
     - openpyxl.cell
@@ -55,8 +60,7 @@ about:
     openpyxl is a Python library to read/write Excel 2010
     xlsx/xlsm/xltx/xltm files.
   doc_url: https://openpyxl.readthedocs.io/
-  dev_url: https://bitbucket.org/openpyxl/openpyxl/
-  doc_source_url: https://bitbucket.org/openpyxl/openpyxl/src/default/doc/index.rst
+  dev_url: https://foss.heptapod.net/openpyxl/openpyxl
 
 extra:
   recipe-maintainers:
