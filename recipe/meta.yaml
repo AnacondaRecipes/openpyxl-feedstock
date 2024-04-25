@@ -25,8 +25,6 @@ requirements:
   run:
     - python
     - et_xmlfile
-    # Used to guard against quadratic blowup, etc.
-    - defusedxml
 
 test:
   requires:
